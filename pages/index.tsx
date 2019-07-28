@@ -2,6 +2,7 @@ import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import { NextPage } from 'next';
+import '../styles/index.css'
 
 interface Entry {
   show: Post
@@ -46,7 +47,7 @@ interface IndexProps {
 const Index: NextPage<IndexProps> = props => (
   <Layout>
     <h1>Batman TV Shows</h1>
-    <h2>v0.0.2</h2>
+    <h2>v0.0.3</h2>
     <ul>
       {props.shows.map(show => (
         <li key={show.id}>
