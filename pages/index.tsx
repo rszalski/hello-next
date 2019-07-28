@@ -2,6 +2,7 @@ import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 import { NextPage } from 'next';
+import '../styles/index.css'
 
 interface Entry {
   show: Post
